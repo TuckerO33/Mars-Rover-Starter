@@ -1,13 +1,12 @@
 const Command = require('./command.js');
 
-class Message extends Command {
+class Message {
    constructor(name, commands) {
-    super(commandType, value);
     this.name = name;
      if (!name) {
        throw Error("Name required.");
      }
-     this.commands = bundleCommands()
+    this.commands = commands;
   }
 }
 module.exports = Message;
